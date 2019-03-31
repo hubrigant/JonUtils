@@ -1,0 +1,43 @@
+=== Request Headers ===
+POST /login HTTP/1.1
+Host: www.reddit.com
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 134
+DNT: 1
+Connection: keep-alive
+Cookie: loid=00000000003ikdvg0i.2.1554041903095.Z0FBQUFBQmNvTXd2YVJkU05BdXIzSUc2bUlNYTBRXzdkSUVUcXZaNVY3eFRSUllzUHlCdVhSRExQVTlaRVlzWHFjXzNMMVpkY0dQQmZ0VjhwUm9TbU5DRlRmYlNnYjUxTGRpMlhxSkpPMk1fanJic0dYZWY0Vjl3Qk1PM1EtOFZNY1ppYjVMRGIxaWc; session_tracker=XjIPwi64aPTKGmUH0r.0.1554041903626.Z0FBQUFBQmNvTXd3VWt1S2NFU2tuMUJDRTZKNWhkNzg2VklSREM5ejMzUlJtaVMwYk1zdHc5M0xWRng5SGk4a2tzLVlBcGY4aDhISmhhQ1psLWJ5OUhSSDdUM0p6bzRZa2E3M0NVSGVhVmJwMGF1MEJSR0t1aE1fUnFwOHFBOHNmSHJmVmQyYTRsWkM; rseor3=true; rabt=; edgebucket=t2AqeXEF4DEtXCGSP0; session=1991688c57177fec6d6acfbc75ad81f771ec9883gAJKQ8ygXEdB1ygzDZCopH1xAVUHX2NzcmZ0X3ECWCgAAABiMTM5YTk0MDRiZGMwY2I1NWQ0MDU3ZjZjM2RiMGJmNDg4NzJhMDY0cQNzh3EELg==
+
+=== Post Data ===
+csrf_token=b139a9404bdc0cb55d4057f6c3db0bf48872a064
+otp
+password=xf25waQRVp3y
+dest=https://www.reddit.com/
+username=hubrigant
+
+=== Response Headers ===
+HTTP/2.0 400 Bad Request
+content-type: application/json; charset=UTF-8
+set-cookie: session=d174e0176302a295d049362caf93fbb278d4fd3agAJK4MygXEdB1ygzDZCopH1xAVUHX2NzcmZ0X3ECWCgAAABiMTM5YTk0MDRiZGMwY2I1NWQ0MDU3ZjZjM2RiMGJmNDg4NzJhMDY0cQNzh3EELg==; Path=/; secure; HttpOnly
+accept-ranges: bytes
+date: Sun, 31 Mar 2019 14:21:20 GMT
+via: 1.1 varnish
+x-served-by: cache-mdw17375-MDW
+x-cache: MISS
+x-cache-hits: 0
+x-timer: S1554042080.390034,VS0,VE515
+cache-control: private, max-age=3600
+strict-transport-security: max-age=15552000; includeSubDomains; preload
+server: snooserv
+content-length: 84
+X-Firefox-Spdy: h2
+
+=== Response Data ===
+{
+  "reason": "WRONG_PASSWORD",
+  "code": 400,
+  "explanation": "wrong password"
+}
